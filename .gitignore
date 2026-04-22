@@ -1,0 +1,43 @@
+# ==========================
+# Entornos Virtuales
+# ==========================
+venv/
+env/
+.venv/
+
+# ==========================
+# Archivos de Entorno (Secretos)
+# ==========================
+.env
+.env.*
+!.env.example
+
+# ==========================
+# Caché de Python
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# ==========================
+# Logs
+# ==========================
+logs/
+*.log
+
+# ==========================
+# Archivos de Bases de Datos
+# ==========================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==========================
+# Datos Temporales y ETL
+# ==========================
+# Ignoramos todo el contenido de input/output, pero NO la carpeta 'sandbox' si contiene '.gitkeep'
+data/input/*
+data/output/*
+!data/input/.gitkeep
+!data/output/.gitkeep
